@@ -17,6 +17,11 @@ module.exports = function(RED) { // eslint-disable-line
 
       if (addr && network.ip.address !== addr) {
         network.ip.address = addr;
+        this.status({
+          fill: 'green',
+          shape: 'dot',
+          text: `IP: ${network.ip.address}`,
+        });
         this.send({
           action: 'set',
           network: {
