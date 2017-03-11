@@ -29,6 +29,11 @@ module.exports = function(RED) { // eslint-disable-line
           },
         });
       } else if (network.ip.address && !addr) {
+        this.status({
+          fill: 'yellow',
+          shape: 'dot',
+          text: `IP address is not set`,
+        });
         this.send({
           action: 'clear',
           network: {
