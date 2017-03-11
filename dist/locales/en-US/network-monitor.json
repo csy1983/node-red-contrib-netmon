@@ -1,0 +1,8 @@
+{
+  "main": {
+    "label": {
+      "name": "Name",
+      "interval": "Polling Interval"
+    }
+  }
+}
