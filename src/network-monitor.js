@@ -7,7 +7,7 @@ module.exports = function(RED) { // eslint-disable-line
   function NetworkMonitorNode(config) {
     RED.nodes.createNode(this, config);
 
-    const interval = config.interval || 3000;
+    const interval = config.interval || 3;
     const network = {
       ip: { address: '' },
     };
@@ -32,7 +32,7 @@ module.exports = function(RED) { // eslint-disable-line
         this.status({
           fill: 'yellow',
           shape: 'dot',
-          text: `IP address is not set`,
+          text: 'IP address is not set',
         });
         this.send({
           action: 'clear',
@@ -44,7 +44,7 @@ module.exports = function(RED) { // eslint-disable-line
       }
     };
 
-    const poller = setInterval(poll, interval);
+    const poller = setInterval(poll, interval * 1000);
 
     this.on('close', () => {
       clearInterval(poller);

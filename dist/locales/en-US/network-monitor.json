@@ -2,7 +2,8 @@
   "main": {
     "label": {
       "name": "Name",
-      "interval": "Polling Interval"
+      "interval": "Set polling interval to",
+      "second": "seconds"
     }
   }
 }
