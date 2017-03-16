@@ -51,5 +51,5 @@ module.exports = function(RED) { // eslint-disable-line
     });
   }
 
-  RED.nodes.registerType('network-monitor', NetworkMonitorNode);
+  RED.nodes.registerType('netmon', NetworkMonitorNode);
 };

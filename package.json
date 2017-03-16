@@ -1,5 +1,5 @@
 {
-  "name": "node-red-contrib-network-monitor",
+  "name": "node-red-contrib-netmon",
   "version": "0.1.0",
   "description": "A network status monitor for Node-RED.",
   "main": "src/network-monitor.js",
@@ -28,11 +28,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/csy1983/node-red-contrib-network-monitor.git"
+    "url": "https://github.com/csy1983/node-red-contrib-netmon.git"
   },
   "node-red": {
     "nodes": {
-      "network-monitor": "dist/network-monitor.js"
+      "netmon": "dist/network-monitor.js"
     }
   }
 }
