@@ -24,7 +24,7 @@ module.exports = function(RED) { // eslint-disable-line
         });
         this.send({
           action: 'set',
-          network: {
+          data: {
             ip: { address: network.ip.address },
           },
         });
@@ -36,7 +36,7 @@ module.exports = function(RED) { // eslint-disable-line
         });
         this.send({
           action: 'clear',
-          network: {
+          data: {
             ip: { address: network.ip.address },
           },
         });
